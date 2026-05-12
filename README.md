@@ -1,1 +1,2 @@
-# gravitatinal-orbits-simulater
+# gravitatinal orbits simulater
+
