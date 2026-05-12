@@ -1,63 +1,43 @@
-# simple n-body simulator
-
-Simple overview of use/purpose.
-
-## Description
-
-An in-depth paragraph about your project and overview of use.
-
-## Getting Started
-
-### Dependencies
-
-* any modern browser with acsess to internet 
-* project is live  [Live Orbits Simulator](https://shockspast.github.io/gravitatinal-orbits-simulater/) right in your browser
-
-
-### Installing
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
-
-### Executing program
-
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
-
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
-
-## Authors
-
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+# Project Name: Orbital Mechanics & Sheets DB
 
 ## Version History
 
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
+* **0.2**
+    * Various bug fixes and optimizations.
+    * [View Commit Change](#) | [View Release History](#)
+* **0.1**
+    * Initial Release.
 
-## License
+---
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+## Development Log
 
-## Acknowledgments
+| Date | Minutes | Focus & Learnings | Resources | Reflection & Next Steps |
+| :--- | :--- | :--- | :--- | :--- |
+| **5/5** | 90 | **V1.0.0**: Implemented gravitational equations and created a simple orbit simulation. | Wikipedia, Godot, Google Fonts | Next: Start UI development. |
+| **5/7** | 15 | **V1.0.1**: Added debugging tools to assist with long-term development. | Godot Docs | Next: Continue UI work. |
+| **5/8** | 30 | Research: Discovered Google Sheets can function as a server. No project edits. | Google Sheets API | Next: Tackle the 3-hour UI task. |
+| **5/10** | 63 | **V1.0.2**: Started UI implementation. | Internal Assets | Next: Finish UI (50% done) and polish. |
+| **5/12** | 75 | Updated README and researched Sheets API as a database. | [Google Sheets API](https://developers.google.com/workspace/sheets/api/reference/rest) | Next: Make UI look excellent; add database. |
+| **5/12** | 120 | Physics and linking logic are 90% complete. Mostly tedious tasks remain. | Godot Engine | Next: Add cameras, DB integration, and final polish. |
 
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+---
+
+## Technical Details
+
+### Physics
+The simulation uses the Law of Universal Gravitation to calculate trajectories:
+$$F = G \frac{m_1 m_2}{r^2}$$
+
+### Database Plan
+I am using **Google Sheets** as a lightweight backend.
+* **Reading:** Data is fetched via `HTTPRequest` as a CSV.
+* **Writing:** Planning to use Google Form POST requests to securely log data without exposing account credentials.
+
+---
+
+## To-Do List
+- [ ] Finish UI (Currently 90%)
+- [ ] Add multiple camera angles
+- [ ] Finalize Google Sheets Database integration
+- [ ] Complete final README documentation
