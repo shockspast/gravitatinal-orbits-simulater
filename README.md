@@ -1,7 +1,9 @@
 # Project Name: Orbital Mechanics & Sheets DB
 
 ## Version History
-
+* **0.3**
+    * ui polish linked all scripts together for easy acsess
+    * [View Commit Change](#) | [View Release History](#)
 * **0.2**
     * Various bug fixes and optimizations.
     * [View Commit Change](#) | [View Release History](#)
@@ -26,13 +28,12 @@
 ## Technical Details
 
 ### Physics
-The simulation uses the Law of Universal Gravitation to calculate trajectories:
+The simulation uses the gravitatinal equation to calculate orbits?
 $$F = G \frac{m_1 m_2}{r^2}$$
 
 ### Database Plan
 I am using **Google Sheets** as a lightweight backend.
-* **Reading:** Data is fetched via `HTTPRequest` as a CSV.
-* **Writing:** Planning to use Google Form POST requests to securely log data without exposing account credentials.
+
 
 ---
 
