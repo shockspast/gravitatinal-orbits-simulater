@@ -19,14 +19,9 @@
 The simulation uses the gravitatinal equation to calculate orbits?
 $$F = G \frac{m_1 m_2}{r^2}$$
 
-### Database Plan
-I am using **Google Sheets** as a lightweight backend.
 
-
----
 
 ## To-Do List
-- [ ] Finish UI (Currently 90%)
+- [ ] Finish UI (Currently about 90%)
 - [ ] Add multiple camera angles
-- [ ] Finalize Google Sheets Database integration
 - [ ] Complete final README documentation
