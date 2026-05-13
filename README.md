@@ -1,4 +1,4 @@
-# Project Name: Orbital Mechanics & Sheets DB
+n body simulator
 
 ## Version History
 * **0.3**
