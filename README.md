@@ -1,6 +1,9 @@
 ## N-body-simulator
 
 ## Version History
+* **0.4**
+    * added website, linked all vars to there parent nodes
+    * [View Commit Change](#) | [View Release History](#)
 * **0.3**
     * ui polish linked all scripts together for easy acsess
     * [View Commit Change](#) | [View Release History](#)
