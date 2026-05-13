@@ -1,4 +1,4 @@
-###n body simulator
+## N-body-simulator
 
 ## Version History
 * **0.3**
