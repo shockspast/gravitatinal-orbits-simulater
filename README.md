@@ -2,7 +2,7 @@
 
 ## Version History
 * **0.4**
-    * added website, linked all vars to there parent nodes
+    * added website, linked all variables to there parent nodes
     * [View Commit Change](#) | [View Release History](#)
 * **0.3**
     * ui polish linked all scripts together for easy acsess
@@ -25,6 +25,7 @@ $$F = G \frac{m_1 m_2}{r^2}$$
 
 
 ## To-Do List
-- [ ] Finish UI (Currently about 90%)
+- [ ] make patches for requested edits
 - [ ] Add multiple camera angles
-- [ ] Complete final README documentation
+- [ ] add server side json
+
