@@ -28,4 +28,14 @@ $$F = G \frac{m_1 m_2}{r^2}$$
 - [ ] make patches for requested edits
 - [ ] Add multiple camera angles
 - [ ] add server side json
+- [ ] make trails
+- [ ] make so u can drag to move
+- [ ] KEEP NAME
+- [ ] add reset
+- [ ] add dristin
+- [ ] planet skins
+- [ ] tutoreals
+- [ ] other bodies like stars and black holes
+- [ ] add explotions
+- [ ] make grid see throu
 
