@@ -30,12 +30,11 @@ $$F = G \frac{m_1 m_2}{r^2}$$
 - [ ] add server side json
 - [ ] make trails
 - [ ] make so u can drag to move
-- [ ] KEEP NAME
-- [ ] add reset
 - [ ] add dristin
 - [ ] planet skins
 - [ ] tutoreals
 - [ ] other bodies like stars and black holes
 - [ ] add explotions
-- [ ] make grid see throu
+
+
 
