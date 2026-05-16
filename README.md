@@ -1,7 +1,7 @@
 ## N-body-simulator
 
 ## Version History
-*** **0.5**
+* **0.5**
     * added tutorial fixedc bugs make upgrades
     * [View Commit Change](#) | [View Release History](#)**
 * **0.4**
