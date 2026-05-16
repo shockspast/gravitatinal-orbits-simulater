@@ -1,6 +1,9 @@
 ## N-body-simulator
 
 ## Version History
+*** **0.5**
+    * added tutorial fixedc bugs make upgrades
+    * [View Commit Change](#) | [View Release History](#)**
 * **0.4**
     * added website, linked all variables to there parent nodes
     * [View Commit Change](#) | [View Release History](#)
