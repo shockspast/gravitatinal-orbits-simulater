@@ -32,7 +32,6 @@ $$F = G \frac{m_1 m_2}{r^2}$$
 - [ ] make so u can drag to move
 - [ ] add dristin
 - [ ] planet skins
-- [ ] tutoreals
 - [ ] other bodies like stars and black holes
 - [ ] add explotions
 
