@@ -1,0 +1,32 @@
+name: Deploy Godot Project to Pages
+
+on:
+  push:
+    branches: ["main"] # Or your default branch name
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          lfs: true # This is the magic line that pulls the real 131MB file
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Point this to where your index.html and .pck are (your /docs folder)
+          path: './docs' 
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
