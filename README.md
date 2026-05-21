@@ -31,14 +31,8 @@ $$F = G \frac{m_1 m_2}{r^2}$$
 
 
 ## To-Do List
-- [ ] make patches for requested edits
 - [ ] Add multiple camera angles
-- [ ] add server side json
-- [ ] make trails
-- [ ] make so u can drag to move
-- [ ] add dristin
-- [ ] planet skins
-- [ ] other bodies like stars and black holes
+- [ ] make so u can drag to move  - NOT FUN AT ALL TO CREATE 
 - [ ] add explotions
 
 
