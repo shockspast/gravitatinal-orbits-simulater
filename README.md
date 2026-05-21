@@ -1,8 +1,11 @@
 ## N-body-simulator
 
 ## Version History
+* **0.6**
+    * added trails, other configs in settings and diffrent planet skins based on mass
+    * [View Commit Change](#) | [View Release History](#)**
 * **0.5**
-    * added tutorial fixedc bugs make upgrades
+    * added a tutorial fixed some bugs and make upgrades
     * [View Commit Change](#) | [View Release History](#)**
 * **0.4**
     * added website, linked all variables to there parent nodes
