@@ -1,5 +1,5 @@
 ## N-body-simulator
-
+this was made as a 8th grade challenge project 
 ## Version History
 * **0.6**
     * added trails, other configs in settings and diffrent planet skins based on mass
