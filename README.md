@@ -1,5 +1,15 @@
 ## N-body-simulator
 this was made as a 8th grade challenge project 
+
+
+
+
+
+
+
+
+
+
 ## Version History
 * **0.6**
     * added trails, other configs in settings and diffrent planet skins based on mass
@@ -25,15 +35,13 @@ this was made as a 8th grade challenge project
 ## Technical Details
 
 ### Physics
-The simulation uses the gravitatinal equation to calculate orbits?
+The simulation uses the gravitatinal equation to calculate orbits: 
 $$F = G \frac{m_1 m_2}{r^2}$$
 
 
 
-## To-Do List
-- [ ] Add multiple camera angles
-- [ ] make so u can drag to move  - NOT FUN AT ALL TO CREATE 
-- [ ] add explotions
+thanks, 
+         oliver
 
 
 
