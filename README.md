@@ -3,6 +3,9 @@
 For my 8th grade project, I decided to create a 3D n-body simulator that I'm calling a gravity simulator because otherwise, no one would know what I meant. I chose to do this as my project because my two favorite things are game development and physics. When I started this project back in May and did not expect it to get this advanced- - might continue working on it for the years to come or i might just archive it i don't relly know yet.
 
 ### about the project
+
+<img width="1311" height="646" alt="image" src="https://github.com/user-attachments/assets/364f8cdf-0040-4d3e-83e5-ee59086f54f9" />
+
 ## Version History
 
 * **0.6**
