@@ -17,4 +17,4 @@ The simulation uses the gravitational equation to calculate orbits:
 $$F = G \frac{m_1 m_2}{r^2}$$
 
 ### development 
-This project uses all open source tools, it was made on arch linux with godot and blender for visuels and google fonts for text. this project is live on github pages at [this link] (https://shockspast.github.io/gravitatinal-orbits-simulater)
+This project uses all open source tools, it was made on arch linux with godot and blender for visuels and google fonts for text. this project is live on github pages at [this link](https://shockspast.github.io/gravitatinal-orbits-simulater)
