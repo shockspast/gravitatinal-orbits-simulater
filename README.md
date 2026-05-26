@@ -5,6 +5,7 @@ For my 8th grade project, I decided to create a 3D n-body simulator that I'm cal
 ### about the project
 
 <img width="1311" height="646" alt="image" src="https://github.com/user-attachments/assets/364f8cdf-0040-4d3e-83e5-ee59086f54f9" />
+This project is a 3d interactive n - body simulator were you can create and custimize the phycics properties of diffrent planets, suns and sattilites. 
 
 ## Version History
 
