@@ -1,6 +1,6 @@
 ## N-body Simulator
 
-For my 8th grade project, I decided to create a 3D n-body simulator that I'm calling a gravity simulator because otherwise, no one would know what I meant. I chose to do this as my project because my two favorite things are game development and physics. I started this project back in May and did not expect it to get this advanced.
+For my 8th grade project, I decided to create a 3D n-body simulator that I'm calling a gravity simulator because otherwise, no one would know what I meant. I chose to do this as my project because my two favorite things are game development and physics. When I started this project back in May and did not expect it to get this advanced- - might continue working on it for the years to come or i might just archive it i don't relly know yet.
 
 ## Version History
 
@@ -29,5 +29,4 @@ For my 8th grade project, I decided to create a 3D n-body simulator that I'm cal
 The simulation uses the gravitational equation to calculate orbits:
 $$F = G \frac{m_1 m_2}{r^2}$$
 
-Thanks,
-Oliver
+
