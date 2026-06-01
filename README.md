@@ -1,6 +1,7 @@
 ## N-body Simulator
 ### about me 
-For my 8th grade project, I decided to create a 3D n-body simulator that I'm calling a gravity simulator because otherwise, no one would know what I meant. I chose to do this as my project because [...]
+This was made as my 8th grade challange project my favorite subjects are physics and python so i combined them and created a  
+n - body simulator in godot. 
 
 ### about the project
 
@@ -15,6 +16,21 @@ This project is a 3d interactive n - body simulator were you can create and cust
 
 The simulation uses the gravitational equation to calculate orbits:
 $$F = G \frac{m_1 m_2}{r^2}$$
+
+this is the implementation in godot
+
+```gdscript
+extends Node
+
+const G = 6.67430
+
+func calculate_gravity_force(pos1: Vector3, mass1: float, pos2: Vector3, mass2: float) -> Vector3:
+	var direction = pos2 - pos1
+	var distance_squared = direction.length_squared()
+	var softening = 10.0
+	var force_magnitude = G * (mass1 * mass2) / (distance_squared + softening)
+	return direction.normalized() * force_magnitude
+```
 
 ### development 
 This project uses all open source tools, it was made on arch linux with godot and blender for visuels and google fonts for text. this project is live on github pages at [this link](https://shockspast.github.io/gravitatinal-orbits-simulater)
