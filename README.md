@@ -99,6 +99,7 @@ git clone https://github.com/shockspast/gravitatinal-orbits-simulater
 than run the program:
 ```
 cd gravitatinal-orbits-simulater
+cd linux
 chmod +x linux
 ./linux
 ```
