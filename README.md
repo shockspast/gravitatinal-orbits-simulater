@@ -16,7 +16,7 @@ This project is a 3d interactive n - body simulator were you can create and cust
 The simulation uses the gravitational equation to calculate orbits:
 $$F = G \frac{m_1 m_2}{r^2}$$
 
-###This is the implementation of the gravity in godot
+This is the implementation of the gravity in godot
 
 ```gdscript
 extends Node
@@ -44,7 +44,7 @@ func calculate_gravity_force(pos1: Vector3, mass1: float, pos2: Vector3, mass2: 
 	var force_magnitude = G * (mass1 * mass2) / (distance_squared + softening)
 	return direction.normalized() * force_magnitude
 ```
-note: yes i know its misspelled i did this at the beginning and it would take to long to fix
+dev note: yes i know its misspelled i did this at the beginning and it would take to long to fix
 
 ### development 
 This project uses all open source tools, it was made on arch linux with godot and blender for visuels and google fonts for text. this project is live on github pages at [this link](https://shockspast.github.io/gravitatinal-orbits-simulater)
