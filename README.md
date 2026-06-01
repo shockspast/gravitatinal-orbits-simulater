@@ -1,8 +1,8 @@
 ## N-body Simulator
-### about me 
+### About me 
 This was made as my 8th grade challange project my favorite subjects are physics and python so i combined them and created a  n - body simulator in godot. 
 
-### about the project
+### About the project
 
 <img width="1311" height="646" alt="image" src="https://github.com/user-attachments/assets/364f8cdf-0040-4d3e-83e5-ee59086f54f9" />
 This project is a 3d interactive n - body simulator were you can create and custimize the phycics properties of diffrent planets, suns and sattilites. 
@@ -48,3 +48,5 @@ dev note: yes i know its misspelled i did this at the beginning and it would tak
 
 ### development 
 This project uses all open source tools, it was made on arch linux with godot and blender for visuels and google fonts for text. this project is live on github pages at [this link](https://shockspast.github.io/gravitatinal-orbits-simulater)
+
+edit: textures are from poly haven a open source website for textures.
