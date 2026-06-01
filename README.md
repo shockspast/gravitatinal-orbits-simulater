@@ -62,9 +62,9 @@ func _physics_process(delta):
 	velocity = grav_velocity 
 	move_and_slide()
 ```
-$\color{yellow}{\text{dev note}}$: yes I know it's misspelled. I did this at the beginning and it would take too long to fix.
+$\color{red}{\text{dev note}}$: yes I know it's misspelled. I did this at the beginning and it would take too long to fix.
 
-$\color{yellow}{\text{dev note}}$: I used the CharacterBody3D node instead of a RigidBody for the planets because it gave me more control.
+$\color{red}{\text{dev note}}$: I used the CharacterBody3D node instead of a RigidBody for the planets because it gave me more control.
 ### development 
 This project uses all open source tools. It was made on Arch Linux with Godot and Blender for visuals and Google Fonts for text. This project is live on GitHub Pages at [this link](https://shockspast.github.io/gravitatinal-orbits-simulater)
 
