@@ -1,0 +1,419 @@
+[gd_scene format=3 uid="uid://cwqa86weth8sx"]
+
+[ext_resource type="Script" uid="uid://carlmfm3o5yxx" path="res://camera_3d.gd" id="1_ig7tw"]
+[ext_resource type="Texture2D" uid="uid://cyiys2svtuq8x" path="res://zz.jpg" id="2_0xm2m"]
+[ext_resource type="Script" uid="uid://cu76wvct3ugc3" path="res://hud.gd" id="2_7mycd"]
+[ext_resource type="FontFile" uid="uid://bimi0wmgvqf72" path="res://IBMPlexMono-ExtraLight.ttf" id="2_h2yge"]
+[ext_resource type="Script" uid="uid://4f7g8br5ixme" path="res://option_button.gd" id="3_lquwl"]
+[ext_resource type="Script" uid="uid://bd80bdqhleh4s" path="res://v_box_container.gd" id="5_7mycd"]
+[ext_resource type="Script" uid="uid://6epm60pcciqh" path="res://tutorial.gd" id="6_272bh"]
+[ext_resource type="Texture2D" uid="uid://belhew1l17fru" path="res://ads.png" id="7_5vw27"]
+[ext_resource type="PackedScene" uid="uid://blo314l23vjta" path="res://Ball.tscn" id="9_kek77"]
+
+[sub_resource type="Environment" id="Environment_7dm0k"]
+background_energy_multiplier = 0.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_272bh"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_5vw27"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_kek77"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h2yge"]
+albedo_texture = ExtResource("2_0xm2m")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_1bvp3"]
+
+[node name="Node3D" type="Node3D" unique_id=1721681070]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1047277172]
+environment = SubResource("Environment_7dm0k")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=2130228784]
+transform = Transform3D(1, 0, 0, 0, 0.80091953, 0.59877205, 0, -0.59877205, 0.80091953, 0, 6.753388, 8.137964)
+script = ExtResource("1_ig7tw")
+
+[node name="lights" type="Node" parent="." unique_id=1139305737]
+
+[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="lights" unique_id=1761259846]
+transform = Transform3D(1, 0, 0, 0, 0.036085583, -0.99934876, 0, 0.99934876, 0.036085583, 0, 0.5991576, 12.939121)
+
+[node name="DirectionalLight3D4" type="DirectionalLight3D" parent="lights" unique_id=70935365]
+transform = Transform3D(1, 0, 0, 0, -0.02980581, 0.99955577, 0, -0.99955577, -0.02980581, 0, 2.085416, 3.360033)
+
+[node name="DirectionalLight3D6" type="DirectionalLight3D" parent="lights" unique_id=1258454392]
+transform = Transform3D(-0.050941456, -0.029767111, 0.998258, -0.9987017, 0.0015183513, -0.050918825, 0, -0.99955577, -0.029805811, 0, 2.085416, 3.360033)
+
+[node name="DirectionalLight3D5" type="DirectionalLight3D" parent="lights" unique_id=1237414567]
+transform = Transform3D(0.0058817086, 0.029805295, -0.9995385, 0.9999827, -0.00017530909, 0.0058790958, 0, -0.99955577, -0.029805811, 0, 2.085416, 3.360033)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="lights" unique_id=85350929]
+transform = Transform3D(1, 0, 0, 0, 0.9981814, -0.060282025, 0, 0.060282025, 0.9981814, 0, 0.5991576, 3.360033)
+
+[node name="DirectionalLight3D3" type="DirectionalLight3D" parent="lights" unique_id=1749512425]
+transform = Transform3D(1, 0, 0, 0, -0.99890053, -0.04687977, 0, 0.04687977, -0.99890053, 0, 0.5991576, 3.360033)
+
+[node name="hud" type="Control" parent="." unique_id=1661334133]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 0
+offset_top = 1.0
+offset_right = 40.0
+offset_bottom = 41.0
+script = ExtResource("2_7mycd")
+
+[node name="launch" type="Button" parent="hud" unique_id=803253404]
+top_level = true
+layout_mode = 0
+offset_left = 5.0
+offset_top = 4.0
+offset_right = 86.0
+offset_bottom = 35.0
+theme_override_fonts/font = ExtResource("2_h2yge")
+text = "launch"
+
+[node name="stop" type="Button" parent="hud" unique_id=1514166755]
+top_level = true
+layout_mode = 0
+offset_left = 150.0
+offset_top = 4.0
+offset_right = 233.0
+offset_bottom = 35.0
+theme_override_fonts/font = ExtResource("2_h2yge")
+text = "stop"
+
+[node name="termanel" type="Control" parent="hud" unique_id=729401683]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="command" type="Label" parent="hud/termanel" unique_id=1564737050]
+layout_mode = 0
+offset_left = 844.0
+offset_top = 507.0
+offset_right = 1159.0
+offset_bottom = 535.0
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_fonts/font = ExtResource("2_h2yge")
+text = "command exicuted"
+
+[node name="Label" type="Label" parent="hud/termanel" unique_id=1868835927]
+layout_mode = 0
+offset_left = 842.0
+offset_top = 455.0
+offset_right = 1156.0
+offset_bottom = 521.0
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_fonts/font = ExtResource("2_h2yge")
+text = "> developer console V1.0.3
+press 6 and 7simultaneously to exit"
+
+[node name="LineEdit" type="LineEdit" parent="hud/termanel" unique_id=1333047284]
+layout_mode = 0
+offset_left = 846.0
+offset_top = 533.0
+offset_right = 1153.0
+offset_bottom = 564.0
+theme_override_colors/font_color = Color(0, 0.8745098, 0, 1)
+theme_override_fonts/font = ExtResource("2_h2yge")
+
+[node name="import" type="Button" parent="hud" unique_id=1027005364]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 483.0
+offset_right = 239.0
+offset_bottom = 548.0
+theme_override_fonts/font = ExtResource("2_h2yge")
+text = "coming soon"
+
+[node name="settings" type="Button" parent="hud" unique_id=503322477]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 401.0
+offset_right = 239.0
+offset_bottom = 466.0
+theme_override_fonts/font = ExtResource("2_h2yge")
+text = "settings"
+
+[node name="setings2" type="Control" parent="hud" unique_id=874160151]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="graphics quality" type="OptionButton" parent="hud/setings2" unique_id=515463361]
+layout_mode = 0
+offset_left = 930.0
+offset_top = 101.0
+offset_right = 1104.0
+offset_bottom = 121.0
+script = ExtResource("3_lquwl")
+
+[node name="Label3" type="Label" parent="hud/setings2" unique_id=1865701665]
+layout_mode = 0
+offset_left = 969.0
+offset_top = 134.0
+offset_right = 1092.0
+offset_bottom = 157.0
+text = "show fps"
+
+[node name="CheckBox" type="CheckBox" parent="hud/setings2" unique_id=927407113]
+layout_mode = 0
+offset_left = 1054.0
+offset_top = 135.0
+offset_right = 1078.0
+offset_bottom = 159.0
+
+[node name="Label2" type="Label" parent="hud/setings2" unique_id=2003800794]
+layout_mode = 0
+offset_left = 949.0
+offset_top = 69.0
+offset_right = 1072.0
+offset_bottom = 92.0
+text = "graphics quality"
+
+[node name="Label" type="Label" parent="hud/setings2" unique_id=269664409]
+layout_mode = 0
+offset_left = 880.0
+offset_top = 5.0
+offset_right = 1130.0
+offset_bottom = 47.0
+theme_override_colors/font_color = Color(0.96862745, 0.96862745, 0.96862745, 1)
+theme_override_fonts/font = ExtResource("2_h2yge")
+theme_override_font_sizes/font_size = 32
+text = "settings menu"
+
+[node name="ColorRect" type="ColorRect" parent="hud/setings2" unique_id=533765786]
+layout_mode = 0
+offset_left = 1059.0
+offset_top = 140.0
+offset_right = 1073.0
+offset_bottom = 154.0
+mouse_filter = 2
+
+[node name="fps" type="Label" parent="hud" unique_id=1125647690]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = 267.0
+offset_top = 8.0
+offset_right = 424.0
+offset_bottom = 31.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_h2yge")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="hud" unique_id=1299681532]
+layout_mode = 0
+offset_top = 50.0
+offset_right = 239.0
+offset_bottom = 391.0
+horizontal_scroll_mode = 3
+vertical_scroll_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="hud/ScrollContainer" unique_id=1211064108]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("5_7mycd")
+
+[node name="Button" type="Button" parent="hud/ScrollContainer/VBoxContainer" unique_id=61941985]
+layout_mode = 2
+text = "                 +add body                  "
+
+[node name="reset" type="Button" parent="hud" unique_id=1512428372]
+top_level = true
+layout_mode = 0
+offset_left = 89.0
+offset_top = 4.0
+offset_right = 147.0
+offset_bottom = 35.0
+theme_override_fonts/font = ExtResource("2_h2yge")
+text = "reset"
+
+[node name="AudioListener3D" type="AudioListener3D" parent="hud" unique_id=337161942]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.229988, 8.10482)
+
+[node name="tutorial" type="Control" parent="hud" unique_id=300323683]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("6_272bh")
+
+[node name="stage1" type="Control" parent="hud/tutorial" unique_id=792367337]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="hud/tutorial/stage1" unique_id=466432160]
+layout_mode = 0
+offset_left = 450.0
+offset_top = 148.0
+offset_right = 921.0
+offset_bottom = 385.0
+theme_override_fonts/font = ExtResource("2_h2yge")
+text = "press launch to start simulation once balls 
+are set to the wanted positions and velocity 
+mass defaults to 10 press stop to pause sim
+and press reset to clear."
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="hud/tutorial/stage1" unique_id=188646034]
+position = Vector2(888, 246)
+scale = Vector2(25.5, 253.5)
+mesh = SubResource("BoxMesh_272bh")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="hud/tutorial/stage1" unique_id=1716241953]
+visibility_layer = 273
+position = Vector2(122.75, 20.75)
+scale = Vector2(246.5, 42.5)
+mesh = SubResource("BoxMesh_5vw27")
+
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="hud/tutorial/stage1" unique_id=1866738443]
+position = Vector2(662, 361)
+scale = Vector2(478.00003, 28.000004)
+mesh = SubResource("BoxMesh_272bh")
+
+[node name="MeshInstance2D4" type="MeshInstance2D" parent="hud/tutorial/stage1" unique_id=686883010]
+position = Vector2(435.75, 248.25)
+scale = Vector2(25.5, 253.5)
+mesh = SubResource("BoxMesh_272bh")
+
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="hud/tutorial/stage1" unique_id=543401515]
+position = Vector2(661.5, 132)
+scale = Vector2(477.00003, 28.000004)
+mesh = SubResource("BoxMesh_272bh")
+
+[node name="MeshInstance2D6" type="MeshInstance2D" parent="hud/tutorial/stage1" unique_id=686987058]
+position = Vector2(345.8924, 75.69092)
+rotation = -1.1333585
+scale = Vector2(25.5, 270.92563)
+mesh = SubResource("BoxMesh_272bh")
+
+[node name="next" type="Button" parent="hud/tutorial/stage1" unique_id=1609104215]
+layout_mode = 0
+offset_left = 590.0
+offset_top = 269.0
+offset_right = 723.0
+offset_bottom = 338.0
+text = "next"
+
+[node name="stage0" type="Control" parent="hud/tutorial" unique_id=1356606019]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ColorRect" type="ColorRect" parent="hud/tutorial/stage0" unique_id=1786817062]
+layout_mode = 0
+offset_left = 414.0
+offset_top = 130.0
+offset_right = 783.0
+offset_bottom = 429.0
+
+[node name="Label" type="Label" parent="hud/tutorial/stage0" unique_id=1425861620]
+layout_mode = 0
+offset_left = 456.0
+offset_top = 148.0
+offset_right = 764.0
+offset_bottom = 306.0
+theme_override_colors/font_color = Color(0, 0.10092849, 0, 1)
+theme_override_fonts/font = ExtResource("2_h2yge")
+theme_override_font_sizes/font_size = 54
+text = "tutorial"
+
+[node name="Button" type="Button" parent="hud/tutorial/stage0" unique_id=1732643087]
+layout_mode = 0
+offset_left = 450.0
+offset_top = 252.0
+offset_right = 577.0
+offset_bottom = 377.0
+text = "yea"
+
+[node name="Button2" type="Button" parent="hud/tutorial/stage0" unique_id=1170241420]
+layout_mode = 0
+offset_left = 620.0
+offset_top = 252.0
+offset_right = 747.0
+offset_bottom = 377.0
+text = "nah"
+
+[node name="stage2" type="Control" parent="hud/tutorial" unique_id=444938120]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="hud/tutorial/stage2" unique_id=1202724272]
+position = Vector2(374.37503, 216)
+scale = Vector2(273.24994, 50.999996)
+mesh = SubResource("BoxMesh_kek77")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="hud/tutorial/stage2" unique_id=2070044910]
+position = Vector2(692.5, 178.99998)
+scale = Vector2(419.0001, 11.500006)
+mesh = SubResource("BoxMesh_kek77")
+
+[node name="MeshInstance2D4" type="MeshInstance2D" parent="hud/tutorial/stage2" unique_id=1231066028]
+position = Vector2(491.50003, 218.62498)
+scale = Vector2(45.00005, 90.75001)
+mesh = SubResource("BoxMesh_kek77")
+
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="hud/tutorial/stage2" unique_id=854177883]
+position = Vector2(903, 219.49998)
+scale = Vector2(45.00005, 93)
+mesh = SubResource("BoxMesh_kek77")
+
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="hud/tutorial/stage2" unique_id=1142364435]
+position = Vector2(691.49994, 260)
+scale = Vector2(444.99994, 11.500006)
+mesh = SubResource("BoxMesh_kek77")
+
+[node name="Ads" type="Sprite2D" parent="hud/tutorial/stage2" unique_id=2032499768]
+position = Vector2(119.25001, 235.49998)
+scale = Vector2(0.984163, 0.8735954)
+texture = ExtResource("7_5vw27")
+
+[node name="Label" type="Label" parent="hud/tutorial/stage2" unique_id=2046277530]
+layout_mode = 0
+offset_left = 530.0
+offset_top = 189.0
+offset_right = 894.0
+offset_bottom = 361.0
+text = "use this panel to customize velocity, position, 
+and mass works while sim is frozen  or active"
+
+[node name="done" type="Button" parent="hud/tutorial/stage2" unique_id=1245320070]
+layout_mode = 0
+offset_left = 607.0
+offset_top = 279.0
+offset_right = 779.0
+offset_bottom = 346.0
+text = "done"
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=868167663]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, -0.032033443)
+material_override = SubResource("StandardMaterial3D_h2yge")
+transparency = 0.8
+mesh = SubResource("PlaneMesh_1bvp3")
+
+[node name="CharacterBody3D" parent="." unique_id=1493997308 instance=ExtResource("9_kek77")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3)
+Xvelosity = 2.086
+
+[node name="CharacterBody3D2" parent="." unique_id=701478897 instance=ExtResource("9_kek77")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)
+Xvelosity = -2.086
+
+[connection signal="pressed" from="hud/launch" to="hud" method="_on_launch_pressed"]
+[connection signal="pressed" from="hud/stop" to="hud" method="_on_stop_pressed"]
+[connection signal="text_submitted" from="hud/termanel/LineEdit" to="Camera3D" method="_on_line_edit_text_submitted"]
+[connection signal="pressed" from="hud/settings" to="hud" method="_on_settings_pressed"]
+[connection signal="item_selected" from="hud/setings2/graphics quality" to="hud/setings2/graphics quality" method="_on_item_selected"]
+[connection signal="toggled" from="hud/setings2/CheckBox" to="hud/setings2/graphics quality" method="_on_check_box_toggled"]
+[connection signal="pressed" from="hud/ScrollContainer/VBoxContainer/Button" to="hud/ScrollContainer/VBoxContainer" method="_on_button_pressed"]
+[connection signal="pressed" from="hud/reset" to="hud" method="_on_button_pressed"]
+[connection signal="pressed" from="hud/reset" to="hud/ScrollContainer/VBoxContainer" method="_on_reset_pressed"]
+[connection signal="pressed" from="hud/tutorial/stage1/next" to="hud/tutorial" method="_on_next_pressed"]
+[connection signal="pressed" from="hud/tutorial/stage0/Button" to="hud/tutorial" method="_on_button_pressed"]
+[connection signal="pressed" from="hud/tutorial/stage0/Button2" to="hud/tutorial" method="_on_button_2_pressed"]
+[connection signal="pressed" from="hud/tutorial/stage2/done" to="hud/tutorial" method="_on_done_pressed"]

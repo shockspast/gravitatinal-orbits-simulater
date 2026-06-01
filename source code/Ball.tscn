@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://blo314l23vjta"]
+
+[ext_resource type="Script" uid="uid://ce4u5mtw4ypb3" path="res://ball.gd" id="1_gk6bx"]
+[ext_resource type="Texture2D" uid="uid://d3aeu8f5wrllj" path="res://dark_wood.png" id="2_lww6v"]
+[ext_resource type="Script" uid="uid://bx2eybuulucug" path="res://trail.gd" id="3_3tj6u"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_gk6bx"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3tj6u"]
+albedo_texture = ExtResource("2_lww6v")
+
+[sub_resource type="SphereMesh" id="SphereMesh_lww6v"]
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_sr3km"]
+
+[node name="CharacterBody3D" type="CharacterBody3D" unique_id=1493997308]
+script = ExtResource("1_gk6bx")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=303884100]
+shape = SubResource("SphereShape3D_gk6bx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=2004547047]
+material_override = SubResource("StandardMaterial3D_3tj6u")
+mesh = SubResource("SphereMesh_lww6v")
+
+[node name="Trail" type="MeshInstance3D" parent="." unique_id=2093744760]
+mesh = SubResource("ImmediateMesh_sr3km")
+script = ExtResource("3_3tj6u")
+max_points = 200000000
