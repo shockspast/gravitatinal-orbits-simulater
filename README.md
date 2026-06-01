@@ -33,20 +33,38 @@ func calculate_gravity_force(pos1: Vector3, mass1: float, pos2: Vector3, mass2: 
 
 as well as the planets script:
 ```gdscript
-extends Node
+extends CharacterBody3D
 
-const G = 6.67430
+@export var Xvelosity: float = 0
+@export var Yvelosity: float = 0
+@export var Zvelosity: float = 0
+@export var mass: float = 10
 
-func calculate_gravity_force(pos1: Vector3, mass1: float, pos2: Vector3, mass2: float) -> Vector3:
-	var direction = pos2 - pos1
-	var distance_squared = direction.length_squared()
-	var softening = 10.0
-	var force_magnitude = G * (mass1 * mass2) / (distance_squared + softening)
-	return direction.normalized() * force_magnitude
+
+@onready var grav_velocity: Vector3 = Vector3(Xvelosity, Yvelosity, Zvelosity)
+
+func _ready():
+	add_to_group("gravity_bodies")
+
+func _physics_process(delta):
+		
+	
+	var total_force = Vector3.ZERO
+	var bodies = get_tree().get_nodes_in_group("gravity_bodies")
+
+	for body in bodies:
+		if body == self: continue
+		total_force += maths.calculate_gravity_force(global_position, mass, body.global_position, body.mass)
+
+	var acceleration = total_force / mass
+	grav_velocity += acceleration * delta 
+
+	velocity = grav_velocity 
+	move_and_slide()
 ```
 dev note: yes I know it's misspelled. I did this at the beginning and it would take too long to fix.
 
 ### development 
-This project uses all open source tools. It was made on Arch Linux with Godot and Blender for visuals and Google Fonts for text. This project is live on GitHub Pages at [this link](https://shocksp[...]
+This project uses all open source tools. It was made on Arch Linux with Godot and Blender for visuals and Google Fonts for text. This project is live on GitHub Pages at [this link](https://shockspast.github.io/gravitatinal-orbits-simulater)
 
 edit: textures are from Poly Haven, an open source website for textures.
