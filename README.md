@@ -103,3 +103,4 @@ cd linux
 chmod +x linux
 ./linux
 ```
+$\color{red}{\text{dev note}}$: no windows support yet please use the website
