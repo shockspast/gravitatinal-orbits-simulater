@@ -66,11 +66,11 @@ $\color{red}{\text{dev note}}$: yes I know it's misspelled. I did this at the be
 
 $\color{red}{\text{dev note}}$: I used the CharacterBody3D node instead of a RigidBody for the planets because it gave me more control.
 ### development 
-This project uses all open source tools. It was made on Arch Linux with Godot and Blender for visuals and Google Fonts for text. This project is live on GitHub Pages at [this link](https://oliverratta.github.io/gravitatinal-orbits-simulater)
+This project uses all open source tools. It was made on Arch Linux with Godot and Blender for visuals and Google Fonts for text. This project is live on GitHub Pages at [this link](https://oliver-ratta.github.io/gravitatinal-orbits-simulater)
 edit: textures are from Poly Haven, an open source website for textures.
 
 ## Installation
-This project is live at https://oliverratta.github.io/gravitatinal-orbits-simulater
+This project is live at https://oliver-ratta.github.io/gravitatinal-orbits-simulater
 
 ### Running on linux 
 
